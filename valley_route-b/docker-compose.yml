@@ -1,0 +1,15 @@
+version: "3.9"
+
+services:
+  web:
+    build: .
+    ports:
+      - "80:80"
+    depends_on:
+      - valleysql
+  valleysql:
+    image: postgres:latest
+    environment:
+        POSTGRES_USER: postgres
+        POSTGRES_PASSWORD: valley
+        POSTGRES_DB: valleydb
