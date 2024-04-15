@@ -4,11 +4,11 @@
 1. [Descripción](#descripción)
 2. [Justificación](#justificación)
 3. [Uso de las librerías](#uso-de-las-librerías)
-4. [Información Personal](#información-personal)
-5. [Contacto](#contacto)
+4. [Sitio Web](#sitio-web)
+5. [Author](#author)
 
 ## Descripción
-ValleyRoute es una aplicación de rastreo de envíos que permite a los usuarios seguir el estado y la ubicación de sus paquetes en tiempo real dentro del área metropolitana del Valle de Aburrá en Antioquia, Colombia. La aplicación ofrece detalles precisos sobre el progreso de los envíos y la visualización de la ruta más eficiente seguida para el envío.
+ValleyRoute es una aplicación de rastreo de envíos que permite a los usuarios seguir el estado y la ubicación de sus paquetes dentro del área metropolitana del Valle de Aburrá en Antioquia, Colombia. La aplicación ofrece detalles precisos sobre el progreso de los envíos y la ruta que ha seguido entre los nodos que tiene la empresa de envíos.
 
 ## Justificación
 Con el continuo crecimiento de las compras en línea y el comercio eléctronico, los consumidores demandan transparencia y actualizaciones en tiempo real sobre sus envíos. ValleyRoute busca satisfacer esta necesidad al proporcionar una herramienta para hacer el seguimiento de envíos, específicamente diseñada para el área metropolitana del Valle de Aburrá.
@@ -20,29 +20,21 @@ Con el continuo crecimiento de las compras en línea y el comercio eléctronico,
 - **Scipy:** Para cálculos estadísticos y optimización de rutas de envío basadas en datos históricos, así como para el cálculo de la ruta más eficiente utilizando el algoritmo de Dijkstra dentro del área metropolitana del Valle de Aburrá.
 - **Geopandas:** Integración de datos geoespaciales para representar la ubicación de los envíos en mapas, centrándose en el área del Valle de Aburrá.
 
-## Requisitos
-1. [Python](https://www.python.org/) (v3.10.0 o superior)
+## Sitio Web
+El proyecto ValleyRoute cuenta con un sitio web que permite a los usuarios:
 
-## Setup del proyecto
+- Registrarse y autenticarse para acceder al sitio web
 
-### Clonar el repositorio
+El sitio web se encuentra en la siguiente dirección: [ValleyRoute](http://valleyweb.s3-website-us-east-1.amazonaws.com/)
 
-```sh
-git clone https://github.com/sacastrot/ppi_dai_CASTROs
-```
 
-### Instalar dependencias
+## Author
 
-```sh
-pip install -r requirements.txt
+Santiago Castro - Desarrollador de software y estudiante de ingeniería de sistemas en la Universidad Nacional de Colombia.
 
-```
 
-## Información Personal
-- **Nombre:** Santiago Castro Tabares
-- **Profesión:** Estudiante de Ingeniería de Sistemas e Informática en la Universidad Nacional de Colombia
+[![GitHub](https://img.shields.io/badge/GitHub-Profile-blue?style=flat-square&logo=github)](https://github.com/sacastrot)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/santiago-castro-tabares/)
+[![Stack Overflow](https://img.shields.io/badge/Stack%20Overflow-Profile-blue?style=flat-square&logo=stackoverflow)](https://stackoverflow.com/users/19891867/santiago)
 
-## Contacto
-- **Correo Electrónico:** sacastrot@unal.edu.co
-- **LinkedIn:** [Santiago Castro Tabares](https://www.linkedin.com/in/santiago-castro-tabares)
 
