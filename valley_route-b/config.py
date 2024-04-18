@@ -1,1 +1,1 @@
-DATABASE_URL = "postgresql://postgres:iG0j1rajVA9jTrd@database-1.cbqwayiwcj0f.us-east-1.rds.amazonaws.com:5432/valleydb"
+DATABASE_URL = "postgresql://valleydb_user:nCA62W0hAIrwn99y3qhAMdGdtp81MOiM@dpg-cog8pk4f7o1s73fpkeag-a.oregon-postgres.render.com/valleydb"
