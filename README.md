@@ -5,7 +5,7 @@
 2. [Justificación](#justificación)
 3. [Uso de las librerías](#uso-de-las-librerías)
 4. [Sitio Web](#sitio-web)
-5. [Author](#author)
+7. [Author](#author)
 
 ## Descripción
 ValleyRoute es una aplicación de rastreo de envíos que permite a los usuarios seguir el estado y la ubicación de sus paquetes dentro del área metropolitana del Valle de Aburrá en Antioquia, Colombia. La aplicación ofrece detalles precisos sobre el progreso de los envíos y la ruta que ha seguido entre los nodos que tiene la empresa de envíos.
@@ -21,13 +21,15 @@ Con el continuo crecimiento de las compras en línea y el comercio eléctronico,
 - **Geopandas:** Integración de datos geoespaciales para representar la ubicación de los envíos en mapas, centrándose en el área del Valle de Aburrá.
 
 ## Sitio Web
+
+### Frontend
 El proyecto ValleyRoute cuenta con un sitio web que permite a los usuarios:
 
 - Registrarse y autenticarse para acceder al sitio web
 
 El sitio web se encuentra en la siguiente dirección: [ValleyRoute](http://valleyweb.s3-website-us-east-1.amazonaws.com/)
 
-## Backend
+### Backend
 - Creación del grafo con los puntos de control de la empresa (pandas, numpy, geopandas)
 
 
