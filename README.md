@@ -27,6 +27,15 @@ El proyecto ValleyRoute cuenta con un sitio web que permite a los usuarios:
 
 El sitio web se encuentra en la siguiente dirección: [ValleyRoute](http://valleyweb.s3-website-us-east-1.amazonaws.com/)
 
+## Backend
+- Creación del grafo con los puntos de control de la empresa (pandas, numpy, geopandas)
+
+
+![valley_route_graph](https://github.com/sacastrot/ppi_dai_CASTROs/assets/70394887/d9a3929e-0520-4fec-8c14-cb7ece4f0f1d)
+
+- Funciones para el caculo de la ruta más corta entre dos puntos de control dados (Scipy, pandas, numpy)
+- Funciones para conocer la distancia recorrida entre dos puntos de control dados (pandas, numpy)
+
 
 ## Author
 
