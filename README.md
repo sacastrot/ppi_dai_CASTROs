@@ -39,7 +39,7 @@ El sitio web se encuentra en la siguiente dirección: [ValleyRoute](http://valle
 - Funciones para conocer la distancia recorrida entre dos puntos de control dados (pandas, numpy)
 
 
-## Author
+## Autor
 
 Santiago Castro - Desarrollador de software y estudiante de ingeniería de sistemas en la Universidad Nacional de Colombia.
 
