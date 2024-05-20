@@ -35,7 +35,7 @@ El proyecto ValleyRoute cuenta con un sitio web que permite a los usuarios:
 
 El sitio web se encuentra en la siguiente dirección: [ValleyRoute](http://valleyweb.s3-website-us-east-1.amazonaws.com/)
 
-El repositorio del frontend se encuentra en la siguiente dirección: [ValleyRoute Frontend](https://github.com/sacastrot/valley-route-front)
+El repositorio del frontend se encuentra en la siguiente dirección: [ValleyRoute Frontend](https://github.com/sacastrot/valley-route-f)
 
 ### Backend
 
