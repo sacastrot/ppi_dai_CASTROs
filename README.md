@@ -5,7 +5,7 @@
 2. [Justificación](#justificación)
 3. [Uso de las librerías](#uso-de-las-librerías)
 4. [Sitio Web](#sitio-web)
-7. [Author](#author)
+7. [Autor](#autor)
 
 ## Descripción
 ValleyRoute es una aplicación de rastreo de envíos que permite a los usuarios seguir el estado y la ubicación de sus paquetes dentro del área metropolitana del Valle de Aburrá en Antioquia, Colombia. La aplicación ofrece detalles precisos sobre el progreso de los envíos y la ruta que ha seguido entre los nodos que tiene la empresa de envíos.
@@ -70,7 +70,7 @@ La API tiene las siguientes funciones:
 - Obtener estadísticas de la aplicación.
 
 
-## Author
+## Autor
 
 Santiago Castro - Desarrollador de software y estudiante de ingeniería de sistemas en la Universidad Nacional de Colombia.
 
