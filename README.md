@@ -26,10 +26,25 @@ Con el continuo crecimiento de las compras en línea y el comercio eléctronico,
 El proyecto ValleyRoute cuenta con un sitio web que permite a los usuarios:
 
 - Registrarse y autenticarse para acceder al sitio web
+- Cambiar la contraseña de su cuenta
+- Visualizar la ruta más optima que va a seguir su envío
+- Crear nuevos paquetes y asignar un destino y un final
+- Visualizar estadísticas de los envíos
+- Visualizar todos los paquetes que ha creado con la cuenta creada
+
 
 El sitio web se encuentra en la siguiente dirección: [ValleyRoute](http://valleyweb.s3-website-us-east-1.amazonaws.com/)
 
+El repositorio del frontend se encuentra en la siguiente dirección: [ValleyRoute Frontend](https://github.com/sacastrot/valley-route-front)
+
 ### Backend
+
+El backend de ValleyRoute es una API REST desarrollada en Python con el framework FastAPI. La API se encarga de gestionar los datos de los usuarios, paquetes, nodos y aristas de la aplicación. Además, se encarga de calcular la ruta más corta entre dos puntos de control de la empresa de envíos y la distancia recorrida entre ellos.
+
+El backend se encuentra en la siguiente dirección: [ValleyRoute API](https://ppi-dai-castros.onrender.com)
+
+El código fuente del backend se encuentra en la carpeta `valley_route-b` de este repositorio.
+
 - Creación del grafo con los puntos de control de la empresa (pandas, numpy, geopandas)
 
 
@@ -37,6 +52,22 @@ El sitio web se encuentra en la siguiente dirección: [ValleyRoute](http://valle
 
 - Funciones para el caculo de la ruta más corta entre dos puntos de control dados (Scipy, pandas, numpy)
 - Funciones para conocer la distancia recorrida entre dos puntos de control dados (pandas, numpy)
+
+La API tiene las siguientes funciones:
+
+- Crear un usuario.
+- Iniciar sesión.
+- Cambiar la contraseña.
+- Crear un paquete.
+- Obtener los paquetes de un usuario.
+- Obtener un paquete por su id.
+- Obtener los nodos de un paquete.
+- Obtener las aristas de un paquete.
+- Obtener todos los nodos.
+- Obtener todas las aristas.
+- Crear un nodo.
+- Crear una arista.
+- Obtener estadísticas de la aplicación.
 
 
 ## Author
