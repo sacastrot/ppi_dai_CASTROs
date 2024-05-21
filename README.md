@@ -35,13 +35,13 @@ El proyecto ValleyRoute cuenta con un sitio web que permite a los usuarios:
 
 El sitio web se encuentra en la siguiente dirección: [ValleyRoute](http://valleyweb.s3-website-us-east-1.amazonaws.com/)
 
-El repositorio del frontend se encuentra en la siguiente dirección: [ValleyRoute Frontend](https://github.com/sacastrot/valley-route-front)
+El repositorio del frontend se encuentra en la siguiente dirección: [ValleyRoute Frontend](https://github.com/sacastrot/valley-route-f)
 
 ### Backend
 
 El backend de ValleyRoute es una API REST desarrollada en Python con el framework FastAPI. La API se encarga de gestionar los datos de los usuarios, paquetes, nodos y aristas de la aplicación. Además, se encarga de calcular la ruta más corta entre dos puntos de control de la empresa de envíos y la distancia recorrida entre ellos.
 
-El backend se encuentra en la siguiente dirección: [ValleyRoute API](https://ppi-dai-castros.onrender.com)
+El backend se encuentra en la siguiente dirección: [ValleyRoute API](https://ppi-dai-castros.onrender.com/)
 
 El código fuente del backend se encuentra en la carpeta `valley_route-b` de este repositorio.
 
