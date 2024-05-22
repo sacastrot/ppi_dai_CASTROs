@@ -5,7 +5,11 @@
 2. [Justificación](#justificación)
 3. [Uso de las librerías](#uso-de-las-librerías)
 4. [Sitio Web](#sitio-web)
-7. [Autor](#autor)
+    - [Frontend](#frontend)
+    - [Backend](#backend)
+        - [Endpoints](#endpoints)
+5. [Autor](#autor)
+
 
 ## Descripción
 ValleyRoute es una aplicación de rastreo de envíos que permite a los usuarios seguir el estado y la ubicación de sus paquetes dentro del área metropolitana del Valle de Aburrá en Antioquia, Colombia. La aplicación ofrece detalles precisos sobre el progreso de los envíos y la ruta que ha seguido entre los nodos que tiene la empresa de envíos.
@@ -55,20 +59,87 @@ El código fuente del backend se encuentra en la carpeta `valley_route-b` de est
 
 La API tiene las siguientes funciones:
 
-- Crear un usuario.
-- Iniciar sesión.
-- Cambiar la contraseña.
-- Crear un paquete.
-- Obtener los paquetes de un usuario.
-- Obtener un paquete por su id.
-- Obtener los nodos de un paquete.
-- Obtener las aristas de un paquete.
-- Obtener todos los nodos.
-- Obtener todas las aristas.
-- Crear un nodo.
-- Crear una arista.
-- Obtener estadísticas de la aplicación.
+#### Endpoints
 
+- Crear un usuario.
+
+| Método | URL | Descripción |
+| ------ | --- | ----------- |
+| POST | /auth/ | Crear un usuario en la plataforma, <br> No requiere estar autenticado |
+
+
+- Iniciar sesión.
+
+| Método | URL | Descripción |
+| ------ | --- | ----------- |
+| POST | /auth/token/ | Iniciar sesión en la plataforma, <br> retorna un token JWT, <br> No requiere estar autenticado |
+
+- Cambiar la contraseña.
+
+| Método | URL | Descripción |
+| ------ | --- | ----------- |
+| POST | /auth/reset-password/ | Cambiar la contraseña de un usuario, <br> No requiere estar autenticado |
+
+
+- Obtener información de un usuario
+
+| Método | URL | Descripción |
+| ------ | --- | ----------- |
+| GET | / (Ruta raíz) | Obtener la información de un usuario, <br> Requiere estar autenticado |
+
+- Obtener todos los nodos de la empresa
+
+| Método | URL | Descripción |
+| ------ | --- | ----------- |
+| GET | /node/ | Obtener todos los nodos de la empresa, <br> Requiere estar autenticado |
+
+- Crear un nodo de la empresa
+
+| Método | URL | Descripción |
+| ------ | --- | ----------- |
+| POST | /node/ | Crear un nodo de la empresa, <br> Requiere estar autenticado |
+
+- Obtener todas las conexiones de los puntos de control (aristas del grafo) de la empresa
+
+| Método | URL | Descripción |
+| ------ | --- | ----------- |
+| GET | /edge/ | Obtener todas las conexiones de los puntos de control, <br> Requiere estar autenticado |
+
+- Crear una conexión entre dos puntos de control (arista del grafo)
+
+| Método | URL | Descripción |
+| ------ | --- | ----------- |
+| POST | /edge/ | Crear una conexión entre dos puntos de control, <br> Requiere estar autenticado |
+
+- Crear un paquete
+
+| Método | URL | Descripción |
+| ------ | --- | ----------- |
+| POST | /package/ | Crear un paquete, <br> Requiere estar autenticado |
+
+- Obtener un paquete
+
+| Método | URL | Descripción |
+| ------ | --- | ----------- |
+| GET | /package/{package_id} | Obtener un paquete, regresa la ruta óptima que va a seguir el paquete <br> Requiere estar autenticado |
+
+- Obtener todos los paquetes de un usuario
+
+| Método | URL | Descripción |
+| ------ | --- | ----------- |
+| GET | /packages | Obtener todos los paquetes de un usuario, solo la información básica <br> Requiere estar autenticado |
+
+- Obtener estadísticas de los nodos de inicio de la empresa
+
+| Método | URL | Descripción |
+| ------ | --- | ----------- |
+| GET | /statistics/nodestart | Obtener estadísticas de los nodos de inicio de la empresa, <br> no requiere estar autenticado |
+
+- Obtener estadísticas de los nodos de final de la empresa
+
+| Método | URL | Descripción |
+| ------ | --- | ----------- |
+| GET | /statistics/nodeend | Obtener estadísticas de los nodos de final de la empresa, <br> no requiere estar autenticado |
 
 ## Autor
 
