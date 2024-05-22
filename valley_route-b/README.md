@@ -119,19 +119,87 @@ Las relaciones entre las tablas son las siguientes:
 
 ## Rutas
 Desde la documentación de la API se pueden realizar las siguientes acciones:
+
 - Crear un usuario.
+
+| Método | URL | Descripción |
+| ------ | --- | ----------- |
+| POST | /auth/ | Crear un usuario en la plataforma, <br> No requiere estar autenticado |
+
+
 - Iniciar sesión.
+
+| Método | URL | Descripción |
+| ------ | --- | ----------- |
+| POST | /auth/token/ | Iniciar sesión en la plataforma, <br> retorna un token JWT, <br> No requiere estar autenticado |
+
 - Cambiar la contraseña.
-- Crear un paquete.
-- Obtener los paquetes de un usuario.
-- Obtener un paquete por su id.
-- Obtener los nodos de un paquete.
-- Obtener las aristas de un paquete.
-- Obtener todos los nodos.
-- Obtener todas las aristas.
-- Crear un nodo.
-- Crear una arista.
-- Obtener estadísticas de la aplicación.
+
+| Método | URL | Descripción |
+| ------ | --- | ----------- |
+| POST | /auth/reset-password/ | Cambiar la contraseña de un usuario, <br> No requiere estar autenticado |
+
+
+- Obtener información de un usuario
+
+| Método | URL | Descripción |
+| ------ | --- | ----------- |
+| GET | / (Ruta raíz) | Obtener la información de un usuario, <br> Requiere estar autenticado |
+
+- Obtener todos los nodos de la empresa
+
+| Método | URL | Descripción |
+| ------ | --- | ----------- |
+| GET | /node/ | Obtener todos los nodos de la empresa, <br> Requiere estar autenticado |
+
+- Crear un nodo de la empresa
+
+| Método | URL | Descripción |
+| ------ | --- | ----------- |
+| POST | /node/ | Crear un nodo de la empresa, <br> Requiere estar autenticado |
+
+- Obtener todas las conexiones de los puntos de control (aristas del grafo) de la empresa
+
+| Método | URL | Descripción |
+| ------ | --- | ----------- |
+| GET | /edge/ | Obtener todas las conexiones de los puntos de control, <br> Requiere estar autenticado |
+
+- Crear una conexión entre dos puntos de control (arista del grafo)
+
+| Método | URL | Descripción |
+| ------ | --- | ----------- |
+| POST | /edge/ | Crear una conexión entre dos puntos de control, <br> Requiere estar autenticado |
+
+- Crear un paquete
+
+| Método | URL | Descripción |
+| ------ | --- | ----------- |
+| POST | /package/ | Crear un paquete, <br> Requiere estar autenticado |
+
+- Obtener un paquete
+
+| Método | URL | Descripción |
+| ------ | --- | ----------- |
+| GET | /package/{package_id} | Obtener un paquete, regresa la ruta óptima que va a seguir el paquete <br> Requiere estar autenticado |
+
+- Obtener todos los paquetes de un usuario
+
+| Método | URL | Descripción |
+| ------ | --- | ----------- |
+| GET | /packages | Obtener todos los paquetes de un usuario, solo la información básica <br> Requiere estar autenticado |
+
+- Obtener estadísticas de los nodos de inicio de la empresa
+
+| Método | URL | Descripción |
+| ------ | --- | ----------- |
+| GET | /statistics/nodestart | Obtener estadísticas de los nodos de inicio de la empresa, <br> no requiere estar autenticado |
+
+- Obtener estadísticas de los nodos de final de la empresa
+
+| Método | URL | Descripción |
+| ------ | --- | ----------- |
+| GET | /statistics/nodeend | Obtener estadísticas de los nodos de final de la empresa, <br> no requiere estar autenticado |
+
 
 Puede acceder a la documentación de la API en el siguiente enlace: [Documentación de la API](https://ppi-dai-castros.onrender.com/docs)
 
